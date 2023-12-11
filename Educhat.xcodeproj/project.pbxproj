@@ -1,0 +1,799 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E61A3DE22B1EB36300D3AFD4 /* Chat.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61A3DE12B1EB36300D3AFD4 /* Chat.swift */; };
+		E61A3DEF2B1EDECD00D3AFD4 /* Messages.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61A3DEE2B1EDECD00D3AFD4 /* Messages.swift */; };
+		E624B0E42B1BAC7C00861EEA /* CreateNewMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E624B0E32B1BAC7C00861EEA /* CreateNewMessage.swift */; };
+		E62C644A2B14382600DE4673 /* EduchatApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E62C64492B14382600DE4673 /* EduchatApp.swift */; };
+		E62C644C2B14382600DE4673 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E62C644B2B14382600DE4673 /* ContentView.swift */; };
+		E62C644E2B14382700DE4673 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E62C644D2B14382700DE4673 /* Assets.xcassets */; };
+		E62C64512B14382700DE4673 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E62C64502B14382700DE4673 /* Preview Assets.xcassets */; };
+		E62C645C2B14382700DE4673 /* EduchatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E62C645B2B14382700DE4673 /* EduchatTests.swift */; };
+		E62C64672B14382800DE4673 /* EduchatUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E62C64662B14382800DE4673 /* EduchatUITests.swift */; };
+		E62C647E2B1438B700DE4673 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = E62C647D2B1438B700DE4673 /* Login.swift */; };
+		E62C64832B1438C000DE4673 /* Register.swift in Sources */ = {isa = PBXBuildFile; fileRef = E62C64822B1438C000DE4673 /* Register.swift */; };
+		E62C64882B143A6F00DE4673 /* PersonaDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = E62C64872B143A6F00DE4673 /* PersonaDAO.swift */; };
+		E62C648D2B143AA800DE4673 /* Persona.swift in Sources */ = {isa = PBXBuildFile; fileRef = E62C648C2B143AA800DE4673 /* Persona.swift */; };
+		E62C64922B143B0D00DE4673 /* UserController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E62C64912B143B0D00DE4673 /* UserController.swift */; };
+		E638388A2B182BA3006D0FAB /* URLImageStore in Frameworks */ = {isa = PBXBuildFile; productRef = E63838892B182BA3006D0FAB /* URLImageStore */; };
+		E638388C2B182BA3006D0FAB /* URLImage in Frameworks */ = {isa = PBXBuildFile; productRef = E638388B2B182BA3006D0FAB /* URLImage */; };
+		E6550AF02B16DEA3001B0BFF /* MainMessages.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6550AEF2B16DEA3001B0BFF /* MainMessages.swift */; };
+		E66F32552B1C429500AF6267 /* ChatLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66F32542B1C429500AF6267 /* ChatLog.swift */; };
+		E685B5332B1445B500E423F7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E685B5322B1445B500E423F7 /* GoogleService-Info.plist */; };
+		E685B5842B144DC300E423F7 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = E685B5832B144DC300E423F7 /* FirebaseAnalytics */; };
+		E685B5862B144DC300E423F7 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = E685B5852B144DC300E423F7 /* FirebaseStorage */; };
+		E685B5882B144DC300E423F7 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = E685B5872B144DC300E423F7 /* FirebaseAuth */; };
+		E685B58A2B144DC300E423F7 /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = E685B5892B144DC300E423F7 /* FirebaseAnalyticsSwift */; };
+		E685B58C2B144DC300E423F7 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = E685B58B2B144DC300E423F7 /* FirebaseFirestore */; };
+		E687FF762B1FDD0400AF5E4D /* RecentMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E687FF752B1FDD0400AF5E4D /* RecentMessage.swift */; };
+		E6B3C1FB2B241B4C000A547A /* PreviewImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B3C1FA2B241B4C000A547A /* PreviewImage.swift */; };
+		E6D2A8762B1D346100E3D236 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6D2A8752B1D346100E3D236 /* ImagePicker.swift */; };
+		E6D2A87B2B1D86E400E3D236 /* ChatControlller.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6D2A87A2B1D86E400E3D236 /* ChatControlller.swift */; };
+		E6D2A88B2B1D8AD500E3D236 /* ChatDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6D2A88A2B1D8AD500E3D236 /* ChatDAO.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E62C64582B14382700DE4673 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E62C643E2B14382600DE4673 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E62C64452B14382600DE4673;
+			remoteInfo = Educhat;
+		};
+		E62C64632B14382800DE4673 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E62C643E2B14382600DE4673 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E62C64452B14382600DE4673;
+			remoteInfo = Educhat;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E61A3DE12B1EB36300D3AFD4 /* Chat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chat.swift; sourceTree = "<group>"; };
+		E61A3DEE2B1EDECD00D3AFD4 /* Messages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Messages.swift; sourceTree = "<group>"; };
+		E624B0E32B1BAC7C00861EEA /* CreateNewMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewMessage.swift; sourceTree = "<group>"; };
+		E62C64462B14382600DE4673 /* Educhat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Educhat.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E62C64492B14382600DE4673 /* EduchatApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EduchatApp.swift; sourceTree = "<group>"; };
+		E62C644B2B14382600DE4673 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		E62C644D2B14382700DE4673 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E62C64502B14382700DE4673 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E62C64522B14382700DE4673 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E62C64572B14382700DE4673 /* EduchatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EduchatTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E62C645B2B14382700DE4673 /* EduchatTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EduchatTests.swift; sourceTree = "<group>"; };
+		E62C645D2B14382700DE4673 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E62C64622B14382800DE4673 /* EduchatUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EduchatUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E62C64662B14382800DE4673 /* EduchatUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EduchatUITests.swift; sourceTree = "<group>"; };
+		E62C64682B14382800DE4673 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E62C647D2B1438B700DE4673 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
+		E62C64822B1438C000DE4673 /* Register.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Register.swift; sourceTree = "<group>"; };
+		E62C64872B143A6F00DE4673 /* PersonaDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonaDAO.swift; sourceTree = "<group>"; };
+		E62C648C2B143AA800DE4673 /* Persona.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persona.swift; sourceTree = "<group>"; };
+		E62C64912B143B0D00DE4673 /* UserController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserController.swift; sourceTree = "<group>"; };
+		E6550AEF2B16DEA3001B0BFF /* MainMessages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMessages.swift; sourceTree = "<group>"; };
+		E66F32542B1C429500AF6267 /* ChatLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatLog.swift; sourceTree = "<group>"; };
+		E685B5322B1445B500E423F7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E687FF752B1FDD0400AF5E4D /* RecentMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentMessage.swift; sourceTree = "<group>"; };
+		E6B3C1FA2B241B4C000A547A /* PreviewImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewImage.swift; sourceTree = "<group>"; };
+		E6D2A8752B1D346100E3D236 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		E6D2A87A2B1D86E400E3D236 /* ChatControlller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatControlller.swift; sourceTree = "<group>"; };
+		E6D2A88A2B1D8AD500E3D236 /* ChatDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatDAO.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E62C64432B14382600DE4673 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E685B58A2B144DC300E423F7 /* FirebaseAnalyticsSwift in Frameworks */,
+				E685B5842B144DC300E423F7 /* FirebaseAnalytics in Frameworks */,
+				E685B5882B144DC300E423F7 /* FirebaseAuth in Frameworks */,
+				E685B58C2B144DC300E423F7 /* FirebaseFirestore in Frameworks */,
+				E638388C2B182BA3006D0FAB /* URLImage in Frameworks */,
+				E638388A2B182BA3006D0FAB /* URLImageStore in Frameworks */,
+				E685B5862B144DC300E423F7 /* FirebaseStorage in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E62C64542B14382700DE4673 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E62C645F2B14382800DE4673 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E624B0D42B1BA8B200861EEA /* NewMessages */ = {
+			isa = PBXGroup;
+			children = (
+				E624B0E32B1BAC7C00861EEA /* CreateNewMessage.swift */,
+			);
+			path = NewMessages;
+			sourceTree = "<group>";
+		};
+		E62C643D2B14382600DE4673 = {
+			isa = PBXGroup;
+			children = (
+				E62C64482B14382600DE4673 /* Educhat */,
+				E62C645A2B14382700DE4673 /* EduchatTests */,
+				E62C64652B14382800DE4673 /* EduchatUITests */,
+				E62C64472B14382600DE4673 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E62C64472B14382600DE4673 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E62C64462B14382600DE4673 /* Educhat.app */,
+				E62C64572B14382700DE4673 /* EduchatTests.xctest */,
+				E62C64622B14382800DE4673 /* EduchatUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E62C64482B14382600DE4673 /* Educhat */ = {
+			isa = PBXGroup;
+			children = (
+				E6D2A8712B1D340100E3D236 /* Utils */,
+				E62C647C2B14387500DE4673 /* View */,
+				E62C647B2B14386900DE4673 /* Model */,
+				E62C647A2B14385C00DE4673 /* Controllers */,
+				E62C64492B14382600DE4673 /* EduchatApp.swift */,
+				E62C644B2B14382600DE4673 /* ContentView.swift */,
+				E62C644D2B14382700DE4673 /* Assets.xcassets */,
+				E62C64522B14382700DE4673 /* Info.plist */,
+				E62C644F2B14382700DE4673 /* Preview Content */,
+			);
+			path = Educhat;
+			sourceTree = "<group>";
+		};
+		E62C644F2B14382700DE4673 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				E62C64502B14382700DE4673 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E62C645A2B14382700DE4673 /* EduchatTests */ = {
+			isa = PBXGroup;
+			children = (
+				E62C645B2B14382700DE4673 /* EduchatTests.swift */,
+				E62C645D2B14382700DE4673 /* Info.plist */,
+			);
+			path = EduchatTests;
+			sourceTree = "<group>";
+		};
+		E62C64652B14382800DE4673 /* EduchatUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E62C64662B14382800DE4673 /* EduchatUITests.swift */,
+				E62C64682B14382800DE4673 /* Info.plist */,
+			);
+			path = EduchatUITests;
+			sourceTree = "<group>";
+		};
+		E62C647A2B14385C00DE4673 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				E62C64912B143B0D00DE4673 /* UserController.swift */,
+				E6D2A87A2B1D86E400E3D236 /* ChatControlller.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		E62C647B2B14386900DE4673 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E6D2A8862B1D874B00E3D236 /* Chat */,
+				E6D2A87F2B1D873B00E3D236 /* Persona */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E62C647C2B14387500DE4673 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E6550AEE2B16DE86001B0BFF /* MainMessages */,
+				E62C647D2B1438B700DE4673 /* Login.swift */,
+				E62C64822B1438C000DE4673 /* Register.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E6550AEE2B16DE86001B0BFF /* MainMessages */ = {
+			isa = PBXGroup;
+			children = (
+				E66F324D2B1C41A300AF6267 /* Chat */,
+				E6550AEF2B16DEA3001B0BFF /* MainMessages.swift */,
+				E624B0D42B1BA8B200861EEA /* NewMessages */,
+			);
+			path = MainMessages;
+			sourceTree = "<group>";
+		};
+		E66F324D2B1C41A300AF6267 /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				E66F32542B1C429500AF6267 /* ChatLog.swift */,
+				E61A3DEE2B1EDECD00D3AFD4 /* Messages.swift */,
+				E6B3C1FA2B241B4C000A547A /* PreviewImage.swift */,
+			);
+			path = Chat;
+			sourceTree = "<group>";
+		};
+		E6D2A8712B1D340100E3D236 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				E685B5322B1445B500E423F7 /* GoogleService-Info.plist */,
+				E6D2A8752B1D346100E3D236 /* ImagePicker.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		E6D2A87F2B1D873B00E3D236 /* Persona */ = {
+			isa = PBXGroup;
+			children = (
+				E62C64872B143A6F00DE4673 /* PersonaDAO.swift */,
+				E62C648C2B143AA800DE4673 /* Persona.swift */,
+			);
+			path = Persona;
+			sourceTree = "<group>";
+		};
+		E6D2A8862B1D874B00E3D236 /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				E6D2A88A2B1D8AD500E3D236 /* ChatDAO.swift */,
+				E61A3DE12B1EB36300D3AFD4 /* Chat.swift */,
+				E687FF752B1FDD0400AF5E4D /* RecentMessage.swift */,
+			);
+			path = Chat;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E62C64452B14382600DE4673 /* Educhat */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E62C646B2B14382800DE4673 /* Build configuration list for PBXNativeTarget "Educhat" */;
+			buildPhases = (
+				E62C64422B14382600DE4673 /* Sources */,
+				E62C64432B14382600DE4673 /* Frameworks */,
+				E62C64442B14382600DE4673 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Educhat;
+			packageProductDependencies = (
+				E685B5832B144DC300E423F7 /* FirebaseAnalytics */,
+				E685B5852B144DC300E423F7 /* FirebaseStorage */,
+				E685B5872B144DC300E423F7 /* FirebaseAuth */,
+				E685B5892B144DC300E423F7 /* FirebaseAnalyticsSwift */,
+				E685B58B2B144DC300E423F7 /* FirebaseFirestore */,
+				E63838892B182BA3006D0FAB /* URLImageStore */,
+				E638388B2B182BA3006D0FAB /* URLImage */,
+			);
+			productName = Educhat;
+			productReference = E62C64462B14382600DE4673 /* Educhat.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E62C64562B14382700DE4673 /* EduchatTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E62C646E2B14382800DE4673 /* Build configuration list for PBXNativeTarget "EduchatTests" */;
+			buildPhases = (
+				E62C64532B14382700DE4673 /* Sources */,
+				E62C64542B14382700DE4673 /* Frameworks */,
+				E62C64552B14382700DE4673 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E62C64592B14382700DE4673 /* PBXTargetDependency */,
+			);
+			name = EduchatTests;
+			productName = EduchatTests;
+			productReference = E62C64572B14382700DE4673 /* EduchatTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E62C64612B14382800DE4673 /* EduchatUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E62C64712B14382800DE4673 /* Build configuration list for PBXNativeTarget "EduchatUITests" */;
+			buildPhases = (
+				E62C645E2B14382800DE4673 /* Sources */,
+				E62C645F2B14382800DE4673 /* Frameworks */,
+				E62C64602B14382800DE4673 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E62C64642B14382800DE4673 /* PBXTargetDependency */,
+			);
+			name = EduchatUITests;
+			productName = EduchatUITests;
+			productReference = E62C64622B14382800DE4673 /* EduchatUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E62C643E2B14382600DE4673 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1200;
+				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+					E62C64452B14382600DE4673 = {
+						CreatedOnToolsVersion = 12.0;
+					};
+					E62C64562B14382700DE4673 = {
+						CreatedOnToolsVersion = 12.0;
+						TestTargetID = E62C64452B14382600DE4673;
+					};
+					E62C64612B14382800DE4673 = {
+						CreatedOnToolsVersion = 12.0;
+						TestTargetID = E62C64452B14382600DE4673;
+					};
+				};
+			};
+			buildConfigurationList = E62C64412B14382600DE4673 /* Build configuration list for PBXProject "Educhat" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E62C643D2B14382600DE4673;
+			packageReferences = (
+				E685B5822B144DC300E423F7 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				E63838882B182BA3006D0FAB /* XCRemoteSwiftPackageReference "url-image" */,
+			);
+			productRefGroup = E62C64472B14382600DE4673 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E62C64452B14382600DE4673 /* Educhat */,
+				E62C64562B14382700DE4673 /* EduchatTests */,
+				E62C64612B14382800DE4673 /* EduchatUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E62C64442B14382600DE4673 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E62C64512B14382700DE4673 /* Preview Assets.xcassets in Resources */,
+				E62C644E2B14382700DE4673 /* Assets.xcassets in Resources */,
+				E685B5332B1445B500E423F7 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E62C64552B14382700DE4673 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E62C64602B14382800DE4673 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E62C64422B14382600DE4673 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E66F32552B1C429500AF6267 /* ChatLog.swift in Sources */,
+				E62C648D2B143AA800DE4673 /* Persona.swift in Sources */,
+				E62C64882B143A6F00DE4673 /* PersonaDAO.swift in Sources */,
+				E62C647E2B1438B700DE4673 /* Login.swift in Sources */,
+				E687FF762B1FDD0400AF5E4D /* RecentMessage.swift in Sources */,
+				E6D2A87B2B1D86E400E3D236 /* ChatControlller.swift in Sources */,
+				E62C644C2B14382600DE4673 /* ContentView.swift in Sources */,
+				E6D2A88B2B1D8AD500E3D236 /* ChatDAO.swift in Sources */,
+				E61A3DEF2B1EDECD00D3AFD4 /* Messages.swift in Sources */,
+				E624B0E42B1BAC7C00861EEA /* CreateNewMessage.swift in Sources */,
+				E62C64922B143B0D00DE4673 /* UserController.swift in Sources */,
+				E61A3DE22B1EB36300D3AFD4 /* Chat.swift in Sources */,
+				E6D2A8762B1D346100E3D236 /* ImagePicker.swift in Sources */,
+				E6550AF02B16DEA3001B0BFF /* MainMessages.swift in Sources */,
+				E6B3C1FB2B241B4C000A547A /* PreviewImage.swift in Sources */,
+				E62C64832B1438C000DE4673 /* Register.swift in Sources */,
+				E62C644A2B14382600DE4673 /* EduchatApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E62C64532B14382700DE4673 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E62C645C2B14382700DE4673 /* EduchatTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E62C645E2B14382800DE4673 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E62C64672B14382800DE4673 /* EduchatUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E62C64592B14382700DE4673 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E62C64452B14382600DE4673 /* Educhat */;
+			targetProxy = E62C64582B14382700DE4673 /* PBXContainerItemProxy */;
+		};
+		E62C64642B14382800DE4673 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E62C64452B14382600DE4673 /* Educhat */;
+			targetProxy = E62C64632B14382800DE4673 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		E62C64692B14382800DE4673 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E62C646A2B14382800DE4673 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E62C646C2B14382800DE4673 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Educhat/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Educhat/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.educhat.edu.Educhat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E62C646D2B14382800DE4673 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Educhat/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Educhat/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.educhat.edu.Educhat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E62C646F2B14382800DE4673 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = EduchatTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.educhat.edu.EduchatTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Educhat.app/Educhat";
+			};
+			name = Debug;
+		};
+		E62C64702B14382800DE4673 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = EduchatTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.educhat.edu.EduchatTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Educhat.app/Educhat";
+			};
+			name = Release;
+		};
+		E62C64722B14382800DE4673 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = EduchatUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.educhat.edu.EduchatUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Educhat;
+			};
+			name = Debug;
+		};
+		E62C64732B14382800DE4673 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = EduchatUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.educhat.edu.EduchatUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Educhat;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E62C64412B14382600DE4673 /* Build configuration list for PBXProject "Educhat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E62C64692B14382800DE4673 /* Debug */,
+				E62C646A2B14382800DE4673 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E62C646B2B14382800DE4673 /* Build configuration list for PBXNativeTarget "Educhat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E62C646C2B14382800DE4673 /* Debug */,
+				E62C646D2B14382800DE4673 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E62C646E2B14382800DE4673 /* Build configuration list for PBXNativeTarget "EduchatTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E62C646F2B14382800DE4673 /* Debug */,
+				E62C64702B14382800DE4673 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E62C64712B14382800DE4673 /* Build configuration list for PBXNativeTarget "EduchatUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E62C64722B14382800DE4673 /* Debug */,
+				E62C64732B14382800DE4673 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E63838882B182BA3006D0FAB /* XCRemoteSwiftPackageReference "url-image" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/dmytro-anokhin/url-image.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.1.1;
+			};
+		};
+		E685B5822B144DC300E423F7 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E63838892B182BA3006D0FAB /* URLImageStore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E63838882B182BA3006D0FAB /* XCRemoteSwiftPackageReference "url-image" */;
+			productName = URLImageStore;
+		};
+		E638388B2B182BA3006D0FAB /* URLImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E63838882B182BA3006D0FAB /* XCRemoteSwiftPackageReference "url-image" */;
+			productName = URLImage;
+		};
+		E685B5832B144DC300E423F7 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E685B5822B144DC300E423F7 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		E685B5852B144DC300E423F7 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E685B5822B144DC300E423F7 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+		E685B5872B144DC300E423F7 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E685B5822B144DC300E423F7 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		E685B5892B144DC300E423F7 /* FirebaseAnalyticsSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E685B5822B144DC300E423F7 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsSwift;
+		};
+		E685B58B2B144DC300E423F7 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E685B5822B144DC300E423F7 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = E62C643E2B14382600DE4673 /* Project object */;
+}
